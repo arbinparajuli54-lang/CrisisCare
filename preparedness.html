@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrisisCare | Preparedness Guides</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Crisis<span>Care</span></div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help-map.html">Help Map</a></li>
+        <li><a href="community-help.html">Community Help</a></li>
+        <li><a href="preparedness.html" class="active">Preparedness</a></li>
+        <li><a href="emergency-alerts.html">Emergency Alerts</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Preparedness for Disasters</h1>
+      <p>
+        Learn what to do before, during, and after common emergencies such as fires, earthquakes,
+        and floods. Use this as a starting guide along with official local instructions.
+      </p>
+    </header>
+
+    <section class="tabs-section">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="fire">Fire</button>
+        <button class="tab-button" data-tab="earthquake">Earthquake</button>
+        <button class="tab-button" data-tab="flood">Flood</button>
+      </div>
+
+      <div class="tab-panels">
+        <article class="tab-panel active" id="fire">
+          <h2>Fire Safety</h2>
+          <div class="timeline">
+            <div class="timeline-block">
+              <h3>Before a fire (Pre‑event)</h3>
+              <ul>
+                <li>Install smoke alarms on every floor and test them every month.</li>
+                <li>Keep fire extinguishers easily accessible in kitchens and near exits.</li>
+                <li>Plan at least two escape routes from every room in your home or building.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>During a fire (Ongoing)</h3>
+              <ul>
+                <li>Stay low and crawl under smoke to the nearest safe exit.</li>
+                <li>Never use elevators during a fire; use stairs only.</li>
+                <li>If your clothes catch fire, stop, drop, and roll until the flames are out.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>After a fire (Post‑event)</h3>
+              <ul>
+                <li>Do not re‑enter the building until authorities say it is safe.</li>
+                <li>Seek medical attention for any breathing difficulty or burns.</li>
+                <li>Document damages for insurance and relief authorities if applicable.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="earthquake">
+          <h2>Earthquake Safety</h2>
+          <div class="timeline">
+            <div class="timeline-block">
+              <h3>Before an earthquake (Pre‑event)</h3>
+              <ul>
+                <li>Secure heavy furniture and appliances to walls.</li>
+                <li>Prepare an emergency kit with water, food, and medicines for at least 72 hours.</li>
+                <li>Identify safe spots such as under sturdy tables or against interior walls.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>During an earthquake (Ongoing)</h3>
+              <ul>
+                <li>Drop, cover, and hold on under a sturdy table or desk.</li>
+                <li>Stay away from windows, glass, and heavy objects that may fall.</li>
+                <li>If outdoors, move to an open area away from buildings, trees, and power lines.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>After an earthquake (Post‑event)</h3>
+              <ul>
+                <li>Expect aftershocks and be prepared to drop, cover, and hold on again.</li>
+                <li>Check yourself and others for injuries and provide first aid if needed.</li>
+                <li>Follow evacuation instructions from local authorities and avoid damaged structures.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="flood">
+          <h2>Flood Safety</h2>
+          <div class="timeline">
+            <div class="timeline-block">
+              <h3>Before a flood (Pre‑event)</h3>
+              <ul>
+                <li>Know if you live in a flood‑prone area and learn local evacuation routes.</li>
+                <li>Store important documents in waterproof containers or digital backups.</li>
+                <li>Prepare an emergency kit with clean water, dry food, and essential medicines.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>During a flood (Ongoing)</h3>
+              <ul>
+                <li>Move to higher ground immediately and avoid walking through moving water.</li>
+                <li>Do not attempt to drive through flooded roads; just 30 cm of water can float a car.</li>
+                <li>Listen to local radio or official alerts for evacuation and shelter information.</li>
+              </ul>
+            </div>
+            <div class="timeline-block">
+              <h3>After a flood (Post‑event)</h3>
+              <ul>
+                <li>Avoid standing water as it may be electrically charged or contaminated.</li>
+                <li>Boil or treat drinking water until authorities confirm it is safe.</li>
+                <li>Photograph damage for relief applications and insurance if available.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CrisisCare. Basic preparedness guidance – always follow official instructions.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

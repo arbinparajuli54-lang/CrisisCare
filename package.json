@@ -1,0 +1,14 @@
+{
+  "name": "crisiscare-site",
+  "version": "1.0.0",
+  "description": "CrisisCare demo site with OpenStreetMap help map and Node.js backend for community help storage.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  }
+}
+
+

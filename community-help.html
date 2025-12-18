@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrisisCare | Community Help</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Crisis<span>Care</span></div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help-map.html">Help Map</a></li>
+        <li><a href="community-help.html" class="active">Community Help</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="emergency-alerts.html">Emergency Alerts</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Community Help & Donations</h1>
+      <p>
+        This space connects volunteers, donors, and coordinators so that help can reach people in need
+        as quickly and safely as possible.
+      </p>
+    </header>
+
+    <section class="grid-section">
+      <h2 class="section-title">How you can help</h2>
+      <div class="card-grid three">
+        <article class="feature-card">
+          <h3>Donate Essentials</h3>
+          <p>
+            Support relief efforts by donating food, water, clothing, blankets, medicines,
+            and hygiene kits through verified collection centers.
+          </p>
+          <ul class="bullet-list">
+            <li>Check expiry dates of all food and medicine.</li>
+            <li>Label items clearly (e.g., “baby food”, “blankets”).</li>
+            <li>Sort clothing by size and type if possible.</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3>Volunteer Your Time</h3>
+          <p>
+            Join as a volunteer to help with packing, distribution, first aid, counselling,
+            or digital coordination and awareness.
+          </p>
+          <ul class="bullet-list">
+            <li>On‑ground relief work and logistics.</li>
+            <li>Medical and psychological support.</li>
+            <li>Online information and helpline support.</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3>Support Financially</h3>
+          <p>
+            Contribute funds to trusted organizations running verified campaigns for affected
+            families and rebuilding efforts.
+          </p>
+          <ul class="bullet-list">
+            <li>Prefer official or government‑linked campaigns.</li>
+            <li>Keep transaction receipts and confirmations safely.</li>
+            <li>Be alert for online fraud and scams.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-intro">
+        <h2>Connect with volunteers & coordinators</h2>
+        <p>
+          Fill this basic form to indicate whether you need help or wish to offer help.
+          A small Node.js backend running on your computer will store the submissions in a text file.
+        </p>
+      </div>
+
+      <form class="simple-form" onsubmit="submitCommunityForm(event)">
+        <div class="form-row">
+          <label for="role">I am</label>
+          <select id="role" name="role" required>
+            <option value="">Select one</option>
+            <option value="donor">A donor</option>
+            <option value="volunteer">A volunteer</option>
+            <option value="organization">An organization</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="city">City / Region</label>
+          <input type="text" id="city" name="city" placeholder="e.g., New road, Basantapur, etc" />
+        </div>
+
+        <div class="form-row">
+          <label for="support-type">Type of support</label>
+          <select id="support-type" name="support-type">
+            <option value="food">Food & water</option>
+            <option value="shelter">Shelter & accommodation</option>
+            <option value="medical">Medical supplies / first aid</option>
+            <option value="logistics">Transport & logistics</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Details</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="Describe what help you need or can offer..."></textarea>
+        </div>
+
+        <p class="form-note">
+          This form sends your details to a small Node.js backend running on your computer. Each
+          submission is automatically appended to a text file that you can open in Notepad later.
+        </p>
+
+        <button type="submit" class="btn btn-primary">Submit Interest</button>
+      </form>
+
+      <p id="community-status" class="form-note" style="margin-top: 0.5rem;"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CrisisCare. Community help section for demonstration purposes only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

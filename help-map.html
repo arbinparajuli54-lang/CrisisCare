@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrisisCare | Help Map</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS for OpenStreetMap -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Crisis<span>Care</span></div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help-map.html" class="active">Help Map</a></li>
+        <li><a href="community-help.html">Community Help</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="emergency-alerts.html">Emergency Alerts</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Help Map</h1>
+      <p>
+        Live map view showing key emergency support areas such as police stations, hospitals and medical
+        centers, and fire & rescue services, powered by OpenStreetMap.
+      </p>
+    </header>
+
+    <section class="map-layout">
+      <div class="map-placeholder">
+        <div class="map-header">
+          <span class="map-label">Swoyambhu Crisis Help Overview (OpenStreetMap Demo)</span>
+        </div>
+        <div id="help-map" class="leaflet-map"></div>
+        <p class="map-note">
+          This dynamic map uses OpenStreetMap tiles. Your approximate location (if you allow it) and
+          example emergency points around Swoyambhu are highlighted.
+        </p>
+      </div>
+
+      <aside class="map-legend">
+        <h2>Legend & quick links</h2>
+        <ul>
+          <li><span class="dot dot-hospital"></span> Major hospitals & emergency clinics</li>
+          <li><span class="dot dot-police"></span> Police stations & patrol posts</li>
+          <li><span class="dot dot-fire"></span> Fire stations & rescue bases</li>
+          <li><span class="dot dot-shelter"></span> Community shelters & relief camps</li>
+        </ul>
+
+        <h3>Example locations</h3>
+        <div class="location-list">
+          <div class="location-item">
+            <h4>Swoyambhu Community Hospital (Demo)</h4>
+            <p><strong>Type:</strong> Emergency Hospital</p>
+            <p><strong>Hotline:</strong> +977-01-111-222</p>
+          </div>
+          <div class="location-item">
+            <h4>Swoyambhu Area Police Post (Demo)</h4>
+            <p><strong>Type:</strong> Police Station</p>
+            <p><strong>Hotline:</strong> 100 / 112</p>
+          </div>
+          <div class="location-item">
+            <h4>Ring Road Fire & Rescue Point (Demo)</h4>
+            <p><strong>Type:</strong> Fire & Rescue</p>
+            <p><strong>Hotline:</strong> 101</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CrisisCare. Demonstration only – contact local authorities for official information.</p>
+  </footer>
+
+  <!-- Leaflet JS for OpenStreetMap -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+--- Community Help Entry ---
+Role: volunteer
+Name: Shree
+Email: shreemhrzn159@gmail.com
+City: DALLU
+Support type: food
+Message: I have food
+Submitted at: 2025-12-18T15:19:09.706Z
+--- Community Help Entry ---
+Role: volunteer
+Name: Shree
+Email: shreemhrzn159@gmail.com
+City: Swoyambhu
+Support type: medical
+Message: I want to help in medicine
+Submitted at: 2025-12-18T15:20:00.479Z
