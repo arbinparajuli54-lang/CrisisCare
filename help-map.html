@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrisisCare | Help Map</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Crisis<span>Care</span></div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="help-map.html" class="active">Help Map</a></li>
+        <li><a href="community-help.html">Community Help</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="emergency-alerts.html">Emergency Alerts</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Help Map</h1>
+      <p>
+        Live map view showing key emergency support areas such as police stations, hospitals and medical
+        centers, and fire & rescue services, powered by Google Maps.
+      </p>
+   <!--   <p class="map-note">
+        Note: To see the real map, you must add your own Google Maps JavaScript API key (instructions below).
+      </p>-->
+    </header>
+
+    <section class="map-layout">
+      <div class="map-placeholder">
+        <div class="map-header">
+          <span class="map-label">Swoyambhu Crisis Help Overview (Demo Map Image)</span>
+        </div>
+        <div class="help-map-image-wrapper">
+          <img
+            class="help-map-image"
+            src="help-map-demo.jpg"
+            alt="Demo crisis help map with highlighted emergency points"
+          />
+        </div>
+<!--    <p class="map-note">
+          This is a static demo image of the imagined crisis help map. Place any JPG image named
+          <strong>help-map-demo.jpg</strong> in the same folder as this file, and it will be shown here.
+        </p>
+    -->
+      </div>
+
+      <aside class="map-legend">
+        <h2>Legend & quick links</h2>
+        <ul>
+          <li><span class="dot dot-hospital"></span> Major hospitals & emergency clinics</li>
+          <li><span class="dot dot-police"></span> Police stations & patrol posts</li>
+          <li><span class="dot dot-fire"></span> Fire stations & rescue bases</li>
+          <li><span class="dot dot-shelter"></span> Community shelters & relief camps</li>
+        </ul>
+
+        <h3>Example locations</h3>
+        <div class="location-list">
+          <div class="location-item">
+            <h4>Central City Hospital</h4>
+            <p><strong>Type:</strong> 24/7 Emergency Hospital</p>
+            <p><strong>Hotline:</strong> +91-0000-111-222</p>
+          </div>
+          <div class="location-item">
+            <h4>Main Police Headquarters</h4>
+            <p><strong>Type:</strong> City Police Station</p>
+            <p><strong>Hotline:</strong> 100 / 112</p>
+          </div>
+          <div class="location-item">
+            <h4>North Fire Station</h4>
+            <p><strong>Type:</strong> Fire & Rescue</p>
+            <p><strong>Hotline:</strong> 101</p>
+          </div>
+        </div>
+
+  <!----      <h3 style="margin-top:0.9rem;">How to enable Google Maps</h3>
+        <p class="map-note">
+          1) Go to the bottom of this file.<br />
+          2) Replace <code>YOUR_GOOGLE_MAPS_API_KEY_HERE</code> with your real API key.<br />
+          3) Save and reload the page in your browser.
+        </p>-->
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CrisisCare. Demonstration only – contact local authorities for official information.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
