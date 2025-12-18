@@ -56,7 +56,8 @@ function initHelpMap() {
   }
 
   // Default center (used if geolocation is not available or is denied)
-  const defaultCenter = { lat: 27.7172, lng: 85.324 }; // Kathmandu as an example
+  // Swoyambhu, Kathmandu, Nepal (demo center)
+  const defaultCenter = { lat: 27.7149, lng: 85.2901 };
 
   const map = new google.maps.Map(mapElement, {
     center: defaultCenter,
@@ -127,26 +128,26 @@ function initHelpMap() {
     );
   }
 
-  // Sample emergency locations with category and colour
+  // Sample emergency locations around Swoyambhu with category and colour
   const locations = [
     {
-      position: { lat: 27.7167, lng: 85.3200 },
-      title: 'Central City Hospital',
+      position: { lat: 27.7165, lng: 85.2918 },
+      title: 'Swoyambhu Community Hospital (Demo)',
       type: 'hospital',
     },
     {
-      position: { lat: 27.7195, lng: 85.3255 },
-      title: 'Main Police Headquarters',
+      position: { lat: 27.7158, lng: 85.288 },
+      title: 'Swoyambhu Area Police Post (Demo)',
       type: 'police',
     },
     {
-      position: { lat: 27.7215, lng: 85.3315 },
-      title: 'North Fire Station',
+      position: { lat: 27.7135, lng: 85.2935 },
+      title: 'Ring Road Fire & Rescue Point (Demo)',
       type: 'fire',
     },
     {
-      position: { lat: 27.7125, lng: 85.3185 },
-      title: 'Community Relief Shelter',
+      position: { lat: 27.7122, lng: 85.2872 },
+      title: 'Local Community Relief Shelter (Demo)',
       type: 'shelter',
     },
   ];

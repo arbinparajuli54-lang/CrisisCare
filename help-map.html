@@ -32,21 +32,28 @@
         Live map view showing key emergency support areas such as police stations, hospitals and medical
         centers, and fire & rescue services, powered by Google Maps.
       </p>
-      <p class="map-note">
+   <!--   <p class="map-note">
         Note: To see the real map, you must add your own Google Maps JavaScript API key (instructions below).
-      </p>
+      </p>-->
     </header>
 
     <section class="map-layout">
       <div class="map-placeholder">
         <div class="map-header">
-          <span class="map-label">City Crisis Help Overview (Google Maps)</span>
+          <span class="map-label">Swoyambhu Crisis Help Overview (Demo Map Image)</span>
         </div>
-        <div id="help-map" class="help-map-canvas"></div>
-        <p class="map-note">
-          This map uses sample coordinates. In a real deployment, replace them with exact locations for
-          your city’s police, hospitals, fire stations, and shelters.
+        <div class="help-map-image-wrapper">
+          <img
+            class="help-map-image"
+            src="help-map-demo.jpg"
+            alt="Demo crisis help map with highlighted emergency points"
+          />
+        </div>
+<!--    <p class="map-note">
+          This is a static demo image of the imagined crisis help map. Place any JPG image named
+          <strong>help-map-demo.jpg</strong> in the same folder as this file, and it will be shown here.
         </p>
+    -->
       </div>
 
       <aside class="map-legend">
@@ -77,12 +84,12 @@
           </div>
         </div>
 
-        <h3 style="margin-top:0.9rem;">How to enable Google Maps</h3>
+  <!----      <h3 style="margin-top:0.9rem;">How to enable Google Maps</h3>
         <p class="map-note">
           1) Go to the bottom of this file.<br />
           2) Replace <code>YOUR_GOOGLE_MAPS_API_KEY_HERE</code> with your real API key.<br />
           3) Save and reload the page in your browser.
-        </p>
+        </p>-->
       </aside>
     </section>
   </main>
@@ -92,7 +99,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <!-- Replace YOUR_REAL_GOOGLE_MAPS_API_KEY with your real Google Maps JavaScript API key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_REAL_GOOGLE_MAPS_API_KEY&callback=initHelpMap" async defer></script>
 </body>
 </html>
